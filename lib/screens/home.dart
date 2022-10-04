@@ -21,30 +21,6 @@ class _HomeScreen extends State<HomeScreen>{
     var screenHeight=MediaQuery.of(context).size.height;
     var screenWidth=MediaQuery.of(context).size.width;
     return Scaffold(
-      appBar:AppBar(
-        elevation:0,
-        backgroundColor:Colors.white,
-        actions:[
-          IconButton(
-            icon:Image.asset("assets/images/linkedin.png"),
-            onPressed:(){
-              launchUrl(linkedinUrl);
-            }
-          ),
-          IconButton(
-            icon:Image.asset("assets/images/github.png"),
-            onPressed:(){
-              launchUrl(githubUrl);
-            } 
-          ),
-          IconButton(
-            icon:Image.asset("assets/images/twitter.jpg"),
-            onPressed:(){
-              launchUrl(twitterUrl);
-            }
-          )
-        ]
-      ),
       body:Container(
         height:screenHeight,
         width:screenWidth,
@@ -53,6 +29,33 @@ class _HomeScreen extends State<HomeScreen>{
         ),
         child:ListView(
           children: [
+            Container(
+              height:50,
+              width:screenWidth,
+              color:Colors.white,
+              child: Row(
+                children: [
+                  IconButton(
+                  icon:Image.asset("assets/images/linkedin.png"),
+                  onPressed:(){
+                    launchUrl(linkedinUrl);
+                  }
+                ),
+              IconButton(
+              icon:Image.asset("assets/images/github.png"),
+              onPressed:(){
+                launchUrl(githubUrl);
+              } 
+          ),
+          IconButton(
+              icon:Image.asset("assets/images/twitter.jpg"),
+              onPressed:(){
+                launchUrl(twitterUrl);
+              }
+          ),
+              ],
+              ),
+            ),
             Center(
             child: Container(
               margin:EdgeInsets.only(top: 20),
@@ -115,7 +118,7 @@ class _HomeScreen extends State<HomeScreen>{
                   Container(
                     color:Colors.white,
                     width:screenWidth,
-                    height:screenHeight/1.25,
+                    height:screenHeight,
                     child:Column(
                       children:[
                         Container(
