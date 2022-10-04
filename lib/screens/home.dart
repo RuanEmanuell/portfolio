@@ -15,6 +15,7 @@ class _HomeScreen extends State<HomeScreen>{
   var twitterUrl=Uri.parse("https://twitter.com/EmanuellRuan");
 
 
+
   @override
   Widget build(BuildContext context){
     var screenHeight=MediaQuery.of(context).size.height;
@@ -70,9 +71,9 @@ class _HomeScreen extends State<HomeScreen>{
                   ))
                   ),
                   Container(
-                    margin:EdgeInsets.only(top: 10),
+                    margin:EdgeInsets.only(top: 10, bottom:50),
                     width:screenWidth/1.5,
-                    height:screenHeight < 700 ? screenHeight/1.5 : screenHeight/2.5,
+                    height:screenHeight/2.5,
                     child:Image.asset("assets/images/ruan.png")
                   ),
                    Text("Desenvolvedor Mobile", style:GoogleFonts.robotoMono(
@@ -91,8 +92,40 @@ class _HomeScreen extends State<HomeScreen>{
                     ),
                   ),
                   Container(
-                    height:400,
-                    color:Colors.white
+                    margin:EdgeInsets.all(50),
+                    width:screenWidth/1.5,
+                    height:screenHeight/6.5,
+                    decoration:BoxDecoration(
+                      color:Colors.white,
+                      borderRadius:BorderRadius.circular(30)
+                    ),
+                    child:Container(
+                      margin:EdgeInsets.all(40),
+                      child: Row(
+                        children:[
+                          Expanded(child: Image.asset("assets/images/flutter.png")),
+                          Expanded(child: Image.asset("assets/images/dart.png")),
+                          Expanded(child: Image.asset("assets/images/firebase.png")),
+                          Expanded(child: Image.asset("assets/images/js.png")),
+                          Expanded(child: Image.asset("assets/images/git.png")),                        
+                        ]
+                      ),
+                    )
+                  ),
+                  Container(
+                    color:Colors.white,
+                    width:screenWidth,
+                    height:screenHeight/1.25,
+                    child:Column(
+                      children:[
+                        Container(
+                          margin:EdgeInsets.only(top: 20),
+                          child:Text("Alguns projetos meus:", style:GoogleFonts.robotoMono(
+                            textStyle:TextStyle(
+                              fontSize:30)
+                          )))
+                      ]
+                    )
                   )
                 ]
               ),
