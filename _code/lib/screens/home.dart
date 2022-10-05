@@ -63,14 +63,14 @@ class _HomeScreen extends State<HomeScreen>{
         height:screenHeight,
         width:screenWidth,
         decoration:BoxDecoration(
-          color:Colors.black
+          color:Color.fromARGB(255, 10, 10, 10)
         ),
         child:ListView(
           children: [
             Container(
               height:50,
               width:screenWidth,
-              color:Colors.white,
+              color:Color.fromARGB(255, 241, 241, 241),
               child: Row(
                 children: [
                   IconButton(
@@ -103,14 +103,14 @@ class _HomeScreen extends State<HomeScreen>{
                   children:[
                     Text("Olá, eu sou", style:GoogleFonts.robotoMono(
                      textStyle:TextStyle(
-                      color:Colors.white,
-                      fontSize:20
+                      color:Color.fromARGB(255, 241, 241, 241),
+                      fontSize:17+screenWidth/150
                     ))
                     ),
                     Text("Ruan Emanuell!", style:GoogleFonts.robotoMono(
                      textStyle:TextStyle(
-                      color:Colors.white,
-                      fontSize:40
+                      color:Color.fromARGB(255, 241, 241, 241),
+                      fontSize:35+screenWidth/150
                     ))
                     ),
                     AnimatedContainer(
@@ -122,15 +122,15 @@ class _HomeScreen extends State<HomeScreen>{
                      Text("Desenvolvedor Mobile", style:GoogleFonts.robotoMono(
                      textStyle:TextStyle(
                       color:Color.fromARGB(255, 0, 189, 63),
-                      fontSize:30
+                      fontSize:25+screenWidth/150
                     ))
                     ),
                     Container(
                       margin:EdgeInsets.only(top: 10),
                       child: Text("Algumas tecnologias que eu conheço:", style:GoogleFonts.robotoMono(
                        textStyle:TextStyle(
-                        color:Colors.white,
-                        fontSize:17
+                        color:Color.fromARGB(255, 241, 241, 241),
+                        fontSize:12+screenWidth/100
                       ))
                       ),
                     ),
@@ -139,7 +139,7 @@ class _HomeScreen extends State<HomeScreen>{
                       width:screenWidth/1.5,
                       height:screenHeight/6.5,
                       decoration:BoxDecoration(
-                        color:Colors.white,
+                        color:Color.fromARGB(255, 241, 241, 241),
                         borderRadius:BorderRadius.circular(30)
                       ),
                       child:Container(
@@ -156,7 +156,7 @@ class _HomeScreen extends State<HomeScreen>{
                       )
                     ),
                     Container(
-                      color:Colors.white,
+                      color:Color.fromARGB(255, 241, 241, 241),
                       width:screenWidth,
                       height:screenHeight+40,
                       child:Column(
@@ -165,7 +165,7 @@ class _HomeScreen extends State<HomeScreen>{
                             margin:EdgeInsets.only(top: 40, bottom:30),
                             child:Text("Alguns projetos meus:", style:GoogleFonts.robotoMono(
                               textStyle:TextStyle(
-                                fontSize:30)
+                                fontSize:21+screenWidth/150)
                             ))
                             ),
                     CarouselSlider(
@@ -186,7 +186,7 @@ class _HomeScreen extends State<HomeScreen>{
                                     Container(
                                       child: ElevatedButton(
                                       style:ElevatedButton.styleFrom(
-                                        backgroundColor:Colors.black
+                                        backgroundColor:Color.fromARGB(255, 10, 10, 10)
                                       ),
                                       onPressed:(){
                                         buttonCarouselController.previousPage(
@@ -207,7 +207,7 @@ class _HomeScreen extends State<HomeScreen>{
                                         decoration:BoxDecoration(
                                           border:Border.all(
                                             width:5,
-                                            color:Colors.black
+                                            color:Color.fromARGB(255, 10, 10, 10)
                                           )
                                         ),
                                         child:Image.asset("assets/images/projeto${e}.png")
@@ -215,7 +215,7 @@ class _HomeScreen extends State<HomeScreen>{
                                     Container(
                                       child: ElevatedButton(
                                       style:ElevatedButton.styleFrom(
-                                        backgroundColor:Colors.black
+                                        backgroundColor:Color.fromARGB(255, 10, 10, 10)
                                       ),                                    
                                       onPressed:(){
                                         buttonCarouselController.nextPage(
@@ -243,7 +243,7 @@ class _HomeScreen extends State<HomeScreen>{
                                     margin:EdgeInsets.only(top: 30),
                                     child: ElevatedButton(
                                       style:ElevatedButton.styleFrom(
-                                        backgroundColor:Colors.black,
+                                        backgroundColor:Color.fromARGB(255, 10, 10, 10),
                                         shape:RoundedRectangleBorder(
                                           borderRadius:BorderRadius.circular(20)
                                         )
@@ -262,7 +262,7 @@ class _HomeScreen extends State<HomeScreen>{
                                             decoration:BoxDecoration(
                                               borderRadius:BorderRadius.circular(20),
                                               border:Border.all(
-                                                color:Colors.white,
+                                                color:Color.fromARGB(255, 241, 241, 241),
                                                 width:2
                                               )
                                             ),
@@ -292,7 +292,7 @@ class _HomeScreen extends State<HomeScreen>{
                   width:190,
                   padding:EdgeInsets.all(10),
                   margin:EdgeInsets.all(10),
-                  color:Colors.white,
+                  color:Color.fromARGB(255, 241, 241, 241),
                   child:Column(
                     children: [
                       Container(

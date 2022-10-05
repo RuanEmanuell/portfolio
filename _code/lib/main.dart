@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 
 import "screens/home.dart";
@@ -6,11 +7,11 @@ import "screens/home.dart";
 
 Future<void> main() async {
   runApp(MaterialApp(
-    themeMode: ThemeMode.light,
     initialRoute:"/home",
     routes:{
       "/home":(context)=>HomeScreen()
     }
-  ));
+   ) 
+  );
 }
 
