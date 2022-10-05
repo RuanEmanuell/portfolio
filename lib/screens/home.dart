@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
 
 class HomeScreen extends StatefulWidget{
@@ -13,6 +14,10 @@ class _HomeScreen extends State<HomeScreen>{
   var linkedinUrl=Uri.parse("https://www.linkedin.com/in/ruan-emanuell-649b97247/");
   var githubUrl=Uri.parse("https://github.com/RuanEmanuell");
   var twitterUrl=Uri.parse("https://twitter.com/EmanuellRuan");
+
+  var projeto=["Naruto Database", "MobileDex", "LotoFacil", "LoadingZ"];
+
+  CarouselController buttonCarouselController = CarouselController();
 
 
 
@@ -128,62 +133,39 @@ class _HomeScreen extends State<HomeScreen>{
                               fontSize:30)
                           ))
                           ),
-                          Container(
-                            margin:EdgeInsets.only(top: 20),
-                            child: Row(
-                              children:[
-                                Expanded(
-                                  child: Container(
-                                  margin:EdgeInsets.all(20),
-                                  color:Colors.black,
-                                  height:screenHeight/3
-                                  ),
+                  CarouselSlider(
+                    carouselController: buttonCarouselController,
+                    options:CarouselOptions(height:screenHeight/2),
+                    items:[0, 1, 2, 3].map((e) {
+                        return Builder(
+                          builder:(BuildContext context) {
+                            return Column(
+                              children: [
+                                Container(
+                                  width:screenWidth/7,
+                                  margin:EdgeInsets.all(10),
+                                  child:Image.asset("assets/images/projeto${e}.png")
                                 ),
-                                Expanded(
-                                  child: Container(
-                                  margin:EdgeInsets.all(20),
-                                  color:Colors.black,
-                                  height:screenHeight/3
-                                  ),
+                                Text(projeto[e]),
+                                ElevatedButton(
+                                  onPressed:(){
+                                    buttonCarouselController.nextPage();
+                                  },
+                                  child:Icon(Icons.arrow_forward) 
                                 ),
-                                Expanded(
-                                  child: Container(
-                                  margin:EdgeInsets.all(20),
-                                  color:Colors.black,
-                                  height:screenHeight/3
-                                  ),
+                                ElevatedButton(
+                                  onPressed:(){
+                                    buttonCarouselController.previousPage();
+                                  },
+                                  child:Icon(Icons.arrow_back) 
                                 )
-                              ]
-                            ),
-                          ),
-                           Container(
-                            margin:EdgeInsets.only(top: 80),
-                            child: Row(
-                              children:[
-                                Expanded(
-                                  child: Container(
-                                  margin:EdgeInsets.all(20),
-                                  color:Colors.black,
-                                  height:screenHeight/3
-                                  ),
-                                ),
-                                Expanded(
-                                  child: Container(
-                                  margin:EdgeInsets.all(20),
-                                  color:Colors.black,
-                                  height:screenHeight/3
-                                  ),
-                                ),
-                                Expanded(
-                                  child: Container(
-                                  margin:EdgeInsets.all(20),
-                                  color:Colors.black,
-                                  height:screenHeight/3
-                                  ),
-                                )
-                              ]
-                            ),
-                          ),
+                              ],
+                            );
+                          },
+                        );
+                    }).toList()
+                  )
+
                       ]
                     )
                   )
