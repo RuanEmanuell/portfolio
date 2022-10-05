@@ -15,7 +15,13 @@ class _HomeScreen extends State<HomeScreen>{
   var githubUrl=Uri.parse("https://github.com/RuanEmanuell");
   var twitterUrl=Uri.parse("https://twitter.com/EmanuellRuan");
 
-  var projeto=["Naruto Database", "MobileDex", "LotoFacil", "LoadingZ"];
+  var projeto={
+    ["MobileDex", "Uma Pokédex feita em Flutter usando a Pokemon Go API"],
+    ["LotoFacil", "Um checador de resultados da Lotofácil usando a API das Loterias"], 
+    ["NarutoDatabase", "Uma mini database de Naruto feita em Flutter"],
+    ["WheaterRT", "Um aplicativo feito pra visualizar o clima em tempo real"],
+    ["LoadingZ", "Uma recriação de minigames de Dragon Ball usando o Flutter e Flame"],
+  }.toList();
 
   CarouselController buttonCarouselController = CarouselController();
 
@@ -136,29 +142,36 @@ class _HomeScreen extends State<HomeScreen>{
                   CarouselSlider(
                     carouselController: buttonCarouselController,
                     options:CarouselOptions(height:screenHeight/2),
-                    items:[0, 1, 2, 3].map((e) {
+                    items:[0, 1, 2, 3, 4].map((e) {
                         return Builder(
                           builder:(BuildContext context) {
                             return Column(
                               children: [
-                                Container(
-                                  width:screenWidth/7,
-                                  margin:EdgeInsets.all(10),
-                                  child:Image.asset("assets/images/projeto${e}.png")
-                                ),
-                                Text(projeto[e]),
-                                ElevatedButton(
-                                  onPressed:(){
-                                    buttonCarouselController.nextPage();
-                                  },
-                                  child:Icon(Icons.arrow_forward) 
-                                ),
-                                ElevatedButton(
+                                Row(
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                  ElevatedButton(
                                   onPressed:(){
                                     buttonCarouselController.previousPage();
                                   },
                                   child:Icon(Icons.arrow_back) 
+                                ),
+                                    Container(
+                                      width:screenWidth/7,
+                                      margin:EdgeInsets.all(10),
+                                      child:Image.asset("assets/images/projeto${e}.png")
+                                    ),
+                                  ElevatedButton(
+                                  onPressed:(){
+                                    buttonCarouselController.nextPage();
+                                  },
+                                  child:Icon(Icons.arrow_forward) 
                                 )
+                                  ],
+                                ),
+                                Text(projeto[e][0]),
+                                Text(projeto[e][1])
                               ],
                             );
                           },
