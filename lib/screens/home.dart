@@ -122,11 +122,68 @@ class _HomeScreen extends State<HomeScreen>{
                     child:Column(
                       children:[
                         Container(
-                          margin:EdgeInsets.only(top: 20),
+                          margin:EdgeInsets.only(top: 20, bottom:20),
                           child:Text("Alguns projetos meus:", style:GoogleFonts.robotoMono(
                             textStyle:TextStyle(
                               fontSize:30)
-                          )))
+                          ))
+                          ),
+                          Container(
+                            margin:EdgeInsets.only(top: 20),
+                            child: Row(
+                              children:[
+                                Expanded(
+                                  child: Container(
+                                  margin:EdgeInsets.all(20),
+                                  color:Colors.black,
+                                  height:screenHeight/3
+                                  ),
+                                ),
+                                Expanded(
+                                  child: Container(
+                                  margin:EdgeInsets.all(20),
+                                  color:Colors.black,
+                                  height:screenHeight/3
+                                  ),
+                                ),
+                                Expanded(
+                                  child: Container(
+                                  margin:EdgeInsets.all(20),
+                                  color:Colors.black,
+                                  height:screenHeight/3
+                                  ),
+                                )
+                              ]
+                            ),
+                          ),
+                           Container(
+                            margin:EdgeInsets.only(top: 80),
+                            child: Row(
+                              children:[
+                                Expanded(
+                                  child: Container(
+                                  margin:EdgeInsets.all(20),
+                                  color:Colors.black,
+                                  height:screenHeight/3
+                                  ),
+                                ),
+                                Expanded(
+                                  child: Container(
+                                  margin:EdgeInsets.all(20),
+                                  color:Colors.black,
+                                  height:screenHeight/3
+                                  ),
+                                ),
+                                Expanded(
+                                  child: Container(
+                                  margin:EdgeInsets.all(20),
+                                  color:Colors.black,
+                                  height:screenHeight/3
+                                  ),
+                                )
+                              ]
+                            ),
+                          ),
                       ]
                     )
                   )
