@@ -16,11 +16,11 @@ class _HomeScreen extends State<HomeScreen>{
   var twitterUrl=Uri.parse("https://twitter.com/EmanuellRuan");
 
   var projeto={
-    ["MobileDex", "Uma Pokédex feita em Flutter usando a Pokemon Go API"],
-    ["LotoFacil", "Um checador de resultados da Lotofácil usando a API das Loterias"], 
-    ["NarutoDatabase", "Uma mini database de Naruto feita em Flutter"],
-    ["WheaterRT", "Um aplicativo feito pra visualizar o clima em tempo real"],
-    ["LoadingZ", "Uma recriação de minigames de Dragon Ball usando o Flutter e Flame"],
+    ["MobileDex", "Uma Pokédex feita em Flutter usando a Pokemon Go API."],
+    ["LotoFacil", "Um checador de resultados da Lotofácil usando a API das Loterias."], 
+    ["NarutoDatabase", "Uma mini database de Naruto feita em Flutter."],
+    ["WheateRT", "Um aplicativo feito pra visualizar o clima em tempo real."],
+    ["LoadingZ", "Uma recriação de minigames de Dragon Ball usando o Flutter e Flame."],
   }.toList();
 
   CarouselController buttonCarouselController = CarouselController();
@@ -85,7 +85,7 @@ class _HomeScreen extends State<HomeScreen>{
                   ))
                   ),
                   Container(
-                    margin:EdgeInsets.only(top: 10, bottom:50),
+                    margin:EdgeInsets.only(top: 10, bottom:10),
                     width:screenWidth/1.5,
                     height:screenHeight/2.5,
                     child:Image.asset("assets/images/ruan.png")
@@ -97,7 +97,7 @@ class _HomeScreen extends State<HomeScreen>{
                   ))
                   ),
                   Container(
-                    margin:EdgeInsets.only(top: 30, bottom:30),
+                    margin:EdgeInsets.only(top: 10, bottom:10),
                     child: Text("Algumas tecnologias que eu conheço:", style:GoogleFonts.robotoMono(
                      textStyle:TextStyle(
                       color:Colors.white,
@@ -141,7 +141,10 @@ class _HomeScreen extends State<HomeScreen>{
                           ),
                   CarouselSlider(
                     carouselController: buttonCarouselController,
-                    options:CarouselOptions(height:screenHeight/2),
+                    options:CarouselOptions(
+                    height:screenHeight-80, 
+                    autoPlay:true,
+                    viewportFraction: 1.1),
                     items:[0, 1, 2, 3, 4].map((e) {
                         return Builder(
                           builder:(BuildContext context) {
@@ -151,28 +154,87 @@ class _HomeScreen extends State<HomeScreen>{
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                  ElevatedButton(
-                                  onPressed:(){
-                                    buttonCarouselController.previousPage();
-                                  },
-                                  child:Icon(Icons.arrow_back) 
+                                  Container(
+                                    margin:EdgeInsets.only(left:25),
+                                    child: ElevatedButton(
+                                    style:ElevatedButton.styleFrom(
+                                      backgroundColor:Colors.black
+                                    ),
+                                    onPressed:(){
+                                      buttonCarouselController.previousPage(
+                                        curve:Curves.easeInOutSine
+                                      );
+                                    },
+                                    child:Icon(Icons.arrow_back, size:30) 
                                 ),
+                                  ),
                                     Container(
-                                      width:screenWidth/7,
-                                      margin:EdgeInsets.all(10),
+                                      margin:EdgeInsets.all(5),
+                                      decoration:BoxDecoration(
+                                        border:Border.all(
+                                          width:5,
+                                          color:Colors.black
+                                        )
+                                      ),
                                       child:Image.asset("assets/images/projeto${e}.png")
                                     ),
-                                  ElevatedButton(
-                                  onPressed:(){
-                                    buttonCarouselController.nextPage();
-                                  },
-                                  child:Icon(Icons.arrow_forward) 
-                                )
+                                  Container(
+                                    margin:EdgeInsets.only(right:25),
+                                    child: ElevatedButton(
+                                    style:ElevatedButton.styleFrom(
+                                      backgroundColor:Colors.black
+                                    ),                                    
+                                    onPressed:(){
+                                      buttonCarouselController.nextPage(
+                                        curve:Curves.easeInOutSine
+                                      );
+                                    },
+                                    child:Icon(Icons.arrow_forward, size:30) 
+                                ),
+                                  )
                                   ],
                                 ),
-                                Text(projeto[e][0]),
-                                Text(projeto[e][1])
-                              ],
+                                Container(
+                                  margin:EdgeInsets.only(top: 10, bottom:10),
+                                  child: Text(projeto[e][0], style:TextStyle(
+                                    fontSize:30
+                                  ))),
+                                Text(projeto[e][1]),
+                                Container(
+                                  width:250,
+                                  height:100,
+                                  margin:EdgeInsets.only(top: 30),
+                                  child: ElevatedButton(
+                                    style:ElevatedButton.styleFrom(
+                                      backgroundColor:Colors.black,
+                                      shape:RoundedRectangleBorder(
+                                        borderRadius:BorderRadius.circular(20)
+                                      )
+                                    ),
+                                    onPressed:(){
+                                      launchUrl(Uri.parse("https://github.com/RuanEmanuell/${projeto[e][0]}"));
+                                    },
+                                    child:Row(
+                                      children: [
+                                        Container(
+                                          margin:EdgeInsets.only(right: 10),
+                                         child: Text("Veja mais no Github", style:TextStyle(
+                                          fontSize:20
+                                         ))),
+                                        Container(
+                                          decoration:BoxDecoration(
+                                            borderRadius:BorderRadius.circular(20),
+                                            border:Border.all(
+                                              color:Colors.white,
+                                              width:2
+                                            )
+                                          ),
+                                          child: Image.asset("assets/images/github.png", width:25))
+                                      ],
+                                    )
+                                  ),
+                                )
+                              ]
                             );
                           },
                         );
