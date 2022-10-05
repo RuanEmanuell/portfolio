@@ -18,10 +18,10 @@ class _HomeScreen extends State<HomeScreen>{
 
   var projeto={
     ["MobileDex", "Uma Pokédex feita em Flutter usando a Pokémon Go API."],
-    ["LotoFacil", "Um checador de resultados da Lotofácil usando a API das Loterias."], 
+    ["LotoFacil", "Um checador de resultados da Lotofácil."], 
     ["NarutoDatabase", "Uma mini database de Naruto feita em Flutter."],
     ["WheateRT", "Um aplicativo feito pra visualizar o clima em tempo real."],
-    ["LoadingZ", "Uma recriação de minigames de Dragon Ball usando o Flutter e Flame."],
+    ["LoadingZ", "Recriação de minigames de Dragon Ball usando FlutterFlame."],
   }.toList();
 
   bool clicked=false;
@@ -122,20 +122,20 @@ class _HomeScreen extends State<HomeScreen>{
                      Text("Desenvolvedor Mobile", style:GoogleFonts.robotoMono(
                      textStyle:TextStyle(
                       color:Color.fromARGB(255, 0, 189, 63),
-                      fontSize:35
+                      fontSize:30
                     ))
                     ),
                     Container(
-                      margin:EdgeInsets.only(top: 10, bottom:10),
+                      margin:EdgeInsets.only(top: 10),
                       child: Text("Algumas tecnologias que eu conheço:", style:GoogleFonts.robotoMono(
                        textStyle:TextStyle(
                         color:Colors.white,
-                        fontSize:20
+                        fontSize:17
                       ))
                       ),
                     ),
                     Container(
-                      margin:EdgeInsets.all(50),
+                      margin:EdgeInsets.all(30),
                       width:screenWidth/1.5,
                       height:screenHeight/6.5,
                       decoration:BoxDecoration(
@@ -143,7 +143,7 @@ class _HomeScreen extends State<HomeScreen>{
                         borderRadius:BorderRadius.circular(30)
                       ),
                       child:Container(
-                        margin:EdgeInsets.all(40),
+                        margin:EdgeInsets.all(20),
                         child: Row(
                           children:[
                             Expanded(child: Image.asset("assets/images/flutter.png")),
@@ -158,11 +158,11 @@ class _HomeScreen extends State<HomeScreen>{
                     Container(
                       color:Colors.white,
                       width:screenWidth,
-                      height:screenHeight,
+                      height:screenHeight+40,
                       child:Column(
                         children:[
                           Container(
-                            margin:EdgeInsets.only(top: 20, bottom:20),
+                            margin:EdgeInsets.only(top: 40, bottom:30),
                             child:Text("Alguns projetos meus:", style:GoogleFonts.robotoMono(
                               textStyle:TextStyle(
                                 fontSize:30)
@@ -184,7 +184,6 @@ class _HomeScreen extends State<HomeScreen>{
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                     Container(
-                                      margin:EdgeInsets.only(left:25),
                                       child: ElevatedButton(
                                       style:ElevatedButton.styleFrom(
                                         backgroundColor:Colors.black
@@ -192,7 +191,7 @@ class _HomeScreen extends State<HomeScreen>{
                                       onPressed:(){
                                         buttonCarouselController.previousPage(
                                           curve:Curves.easeInOutSine,
-                                          duration:Duration(milliseconds: 750)         
+                                          duration:Duration(seconds: 1)         
                                         );
                                         setState((){
                                           clicked=true;
@@ -202,7 +201,9 @@ class _HomeScreen extends State<HomeScreen>{
                                   ),
                                     ),
                                       Container(
-                                        margin:EdgeInsets.all(5),
+                                        margin:EdgeInsets.only(right: 5, left:5),
+                                        width:screenWidth>730? 355: screenWidth/2.075,
+                                        height:screenWidth>730? screenHeight/1.5:screenHeight/2,
                                         decoration:BoxDecoration(
                                           border:Border.all(
                                             width:5,
@@ -212,7 +213,6 @@ class _HomeScreen extends State<HomeScreen>{
                                         child:Image.asset("assets/images/projeto${e}.png")
                                       ),
                                     Container(
-                                      margin:EdgeInsets.only(right:25),
                                       child: ElevatedButton(
                                       style:ElevatedButton.styleFrom(
                                         backgroundColor:Colors.black
@@ -220,7 +220,7 @@ class _HomeScreen extends State<HomeScreen>{
                                       onPressed:(){
                                         buttonCarouselController.nextPage(
                                           curve:Curves.easeInOutSine,
-                                          duration:Duration(milliseconds: 750)                                        
+                                          duration:Duration(seconds: 1)                                        
                                         );
                                         setState((){
                                           clicked=true;
@@ -232,7 +232,7 @@ class _HomeScreen extends State<HomeScreen>{
                                     ],
                                   ),
                                   Container(
-                                    margin:EdgeInsets.only(top: 10, bottom:10),
+                                    margin:EdgeInsets.only(top: 20, bottom:10),
                                     child: Text(projeto[e][0], style:TextStyle(
                                       fontSize:30
                                     ))),
@@ -301,7 +301,7 @@ class _HomeScreen extends State<HomeScreen>{
                       Text("Você pode entrar em contato comigo por aqui!"),
                     ],
                   )
-                 ),
+                 )
                )
               ]
             )
