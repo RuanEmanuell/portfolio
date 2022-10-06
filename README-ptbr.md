@@ -2,7 +2,7 @@
 
 ### Portfólio
 
-Este é meu portfólio, foi feito com Flutter, responsivo e se adaptando ao modo escuro.
+Este é meu portfólio, foi feito com Flutter, responsivo e se adaptando ao modo escuro. O código-fonte está na pasta "_code"
 
 
 ### Como rodar
