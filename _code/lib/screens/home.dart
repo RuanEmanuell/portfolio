@@ -204,8 +204,8 @@ class _HomeScreen extends State<HomeScreen>{
                                     ),
                                       Container(
                                         margin:EdgeInsets.only(right: 5, left:5),
-                                        width:screenWidth>730? 355: screenWidth/2.075,
-                                        height:screenWidth>730? screenHeight/1.5:screenHeight/2,
+                                        width:screenWidth>480? 280:200,
+                                        height:screenHeight/1.9,
                                         decoration:BoxDecoration(
                                           border:Border.all(
                                             width:5,

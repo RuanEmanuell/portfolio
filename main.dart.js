@@ -57466,23 +57466,20 @@ A.a3k.prototype={
 $1(a){var s,r,q,p,o,n,m,l=this,k=null,j=l.a,i=j.z,h=A.QJ(k,k,i,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k)
 h=A.cu(k,A.a8y(A.a8H(B.zn,30),new A.a3h(j),h),B.m,k,k,k,k,k,k,k,k,k,k)
 s=l.b
-r=s>730
-q=r?355:s/2.075
-p=l.c
-r=r?p/1.5:p/2
-p=l.d
-q=A.cu(k,k,B.m,k,k,new A.eJ(k,new A.zX(new A.n1("assets/images/projeto"+p+".png",k,k)),A.abb(i,5),k,k,k,B.aL),k,r,new A.aD(5,0,5,0),k,k,k,q)
-r=A.QJ(k,k,i,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k)
+r=s>480?280:200
+q=l.d
+r=A.cu(k,k,B.m,k,k,new A.eJ(k,new A.zX(new A.n1("assets/images/projeto"+q+".png",k,k)),A.abb(i,5),k,k,k,B.aL),k,l.c/1.9,new A.aD(5,0,5,0),k,k,k,r)
+p=A.QJ(k,k,i,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k)
 o=t.F
-r=A.E3(A.a([h,q,A.cu(k,A.a8y(A.a8H(B.zo,30),new A.a3i(j),r),B.m,k,k,k,k,k,k,k,k,k,k)],o),B.bq,B.Da,B.bB)
-q=j.r
-h=A.cu(k,A.ko(q[p][0],A.f6(k,k,k,k,k,k,k,k,k,k,k,30,k,k,k,k,k,!0,k,k,k,k,k,k,k,k),k,k),B.m,k,k,k,k,k,new A.aD(0,20,0,10),k,k,k,k)
-s=A.ko(q[p][1],A.f6(k,k,k,k,k,k,k,k,k,k,k,13+s/250,k,k,k,k,k,!0,k,k,k,k,k,k,k,k),k,k)
+p=A.E3(A.a([h,r,A.cu(k,A.a8y(A.a8H(B.zo,30),new A.a3i(j),p),B.m,k,k,k,k,k,k,k,k,k,k)],o),B.bq,B.Da,B.bB)
+r=j.r
+h=A.cu(k,A.ko(r[q][0],A.f6(k,k,k,k,k,k,k,k,k,k,k,30,k,k,k,k,k,!0,k,k,k,k,k,k,k,k),k,k),B.m,k,k,k,k,k,new A.aD(0,20,0,10),k,k,k,k)
+s=A.ko(r[q][1],A.f6(k,k,k,k,k,k,k,k,k,k,k,13+s/250,k,k,k,k,k,!0,k,k,k,k,k,k,k,k),k,k)
 i=A.QJ(k,k,i,k,k,k,k,k,k,k,k,k,k,k,new A.cG(A.n5(20),B.q),k,k,k,k)
-q=A.cu(k,A.ko("Veja mais no Github",A.f6(k,k,k,k,k,k,k,k,k,k,k,20,k,k,k,k,k,!0,k,k,k,k,k,k,k,k),k,k),B.m,k,k,k,k,k,new A.aD(0,0,10,0),k,k,k,k)
+r=A.cu(k,A.ko("Veja mais no Github",A.f6(k,k,k,k,k,k,k,k,k,k,k,20,k,k,k,k,k,!0,k,k,k,k,k,k,k,k),k,k),B.m,k,k,k,k,k,new A.aD(0,0,10,0),k,k,k,k)
 n=A.n5(30)
 m=A.abb(A.aw(255,241,241,241),2)
-return A.OF(A.a([r,h,s,A.cu(k,A.a8y(A.E3(A.a([q,A.cu(k,A.it("assets/images/github.png",25),B.m,k,k,new A.eJ(k,k,m,n,k,k,B.aL),k,k,k,k,k,k,k)],o),B.bq,B.ck,B.bB),new A.a3j(j,p),i),B.m,k,k,k,k,100,new A.aD(0,30,0,0),k,k,k,250)],o))},
+return A.OF(A.a([p,h,s,A.cu(k,A.a8y(A.E3(A.a([r,A.cu(k,A.it("assets/images/github.png",25),B.m,k,k,new A.eJ(k,k,m,n,k,k,B.aL),k,k,k,k,k,k,k)],o),B.bq,B.ck,B.bB),new A.a3j(j,q),i),B.m,k,k,k,k,100,new A.aD(0,30,0,0),k,k,k,250)],o))},
 $S:368}
 A.a3h.prototype={
 $0(){var s=this.a
