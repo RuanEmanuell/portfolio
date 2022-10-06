@@ -4,7 +4,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'dart:async';
 
-//Tela inicial
 class HomeScreen extends StatefulWidget{
   @override
   _HomeScreen createState()=> _HomeScreen();
@@ -118,10 +117,10 @@ class _HomeScreen extends State<HomeScreen>{
                         duration:Duration(seconds: 2),
                         curve:Curves.easeInOut,
                         child: Image.asset("assets/images/ruan.png")),
-                       Text("Desenvolvedor Mobile", style:GoogleFonts.robotoMono(
+                       Text("Desenvolvedor Mobile JR", style:GoogleFonts.robotoMono(
                        textStyle:TextStyle(
                         color:Color.fromARGB(255, 0, 189, 63),
-                        fontSize:24+screenWidth/150
+                        fontSize:22+screenWidth/150
                       ))
                       ),
                       Container(
