@@ -120,7 +120,7 @@ class _HomeScreen extends State<HomeScreen>{
                        Text("Desenvolvedor Mobile Jr", style:GoogleFonts.robotoMono(
                        textStyle:TextStyle(
                         color:Color.fromARGB(255, 0, 189, 63),
-                        fontSize:22+screenWidth/150
+                        fontSize:21+screenWidth/125
                       ))
                       ),
                       Container(
