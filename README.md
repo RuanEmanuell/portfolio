@@ -2,7 +2,7 @@
 
 ### Portfólio
 
-This is my portfolio, it was made in Flutter, and it's responsive and works in dark theme.
+This is my portfolio, it was made in Flutter, and it's responsive and works in dark theme, you can find the source code in the "_code" folder.
 
 ### How to Run
 
