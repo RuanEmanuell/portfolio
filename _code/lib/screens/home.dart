@@ -237,7 +237,7 @@ class _HomeScreen extends State<HomeScreen>{
                                         fontSize:30
                                       ))),
                                     Text(projeto[e][1], style:TextStyle(
-                                      fontSize:11+screenWidth/250
+                                      fontSize:12+screenWidth/300
                                     )),
                                     Container(
                                       width:250,
