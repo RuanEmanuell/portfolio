@@ -20,7 +20,7 @@ class _HomeScreen extends State<HomeScreen> {
     ["MobileDex", "Uma Pokédex feita em Flutter usando a Pokémon Go API."],
     ["LotoFacil", "Um checador de resultados da Lotofácil."],
     ["NarutoDatabase", "Uma mini database de Naruto feita em Flutter."],
-    ["WheateRT", "Um app feito pra visualizar o clima em tempo real."],
+    ["WheateRT", "Um app feito para visualizar o clima em tempo real."],
     ["LoadingZ", "Minigames de Dragon Ball usando FlutterFlame."],
   ];
 
@@ -88,7 +88,7 @@ class _HomeScreen extends State<HomeScreen> {
      return GoogleFonts.robotoMono(
               textStyle: TextStyle(
                 color: black, 
-                fontSize: 9 + screenWidth / 200)
+                fontSize: 12 + screenWidth / 200)
              );
     }
 
@@ -249,13 +249,19 @@ class _HomeScreen extends State<HomeScreen> {
                                       child: Text(projeto[e][0],
                                           style: bigTextStyleBlack())
                                   ),
-                                  Text(projeto[e][1],
-                                      style: smallerTextStyleBlack()
+                                  Container(
+                                    padding:const EdgeInsets.only(
+                                      left:40,
+                                      right:40,
+                                      bottom:20
+                                    ),
+                                    child: Text(projeto[e][1],
+                                        style: smallerTextStyleBlack()
+                                    ),
                                   ),
                                   Container(
                                     width: 250,
                                     height: 100,
-                                    margin: const EdgeInsets.only(top: 20),
                                     child: ElevatedButton(
                                         style: ElevatedButton.styleFrom(
                                             backgroundColor: black,
