@@ -20,8 +20,8 @@ class _HomeScreen extends State<HomeScreen>{
     ["MobileDex", "Uma Pokédex feita em Flutter usando a Pokémon Go API."],
     ["LotoFacil", "Um checador de resultados da Lotofácil."], 
     ["NarutoDatabase", "Uma mini database de Naruto feita em Flutter."],
-    ["WheateRT", "Um aplicativo feito pra visualizar o clima em tempo real."],
-    ["LoadingZ", "Recriação de minigames de Dragon Ball usando FlutterFlame."],
+    ["WheateRT", "Um app feito pra visualizar o clima em tempo real."],
+    ["LoadingZ", "Minigames de Dragon Ball usando FlutterFlame."],
   ];
 
   bool clicked=false;
@@ -237,7 +237,7 @@ class _HomeScreen extends State<HomeScreen>{
                                         fontSize:30
                                       ))),
                                     Text(projeto[e][1], style:TextStyle(
-                                      fontSize:12+screenWidth/300
+                                      fontSize:11+screenWidth/220
                                     )),
                                     Container(
                                       width:250,

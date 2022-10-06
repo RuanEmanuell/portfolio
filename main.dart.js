@@ -57388,7 +57388,7 @@ $1(a){return new A.lt(null)},
 $S:366}
 A.lt.prototype={
 ae(){var s=t.s
-return new A.HD(A.mp("https://www.linkedin.com/in/ruan-emanuell-649b97247/",0,null),A.mp("https://github.com/RuanEmanuell",0,null),A.mp("https://twitter.com/EmanuellRuan",0,null),[A.a(["MobileDex","Uma Pok\xe9dex feita em Flutter usando a Pok\xe9mon Go API."],s),A.a(["LotoFacil","Um checador de resultados da Lotof\xe1cil."],s),A.a(["NarutoDatabase","Uma mini database de Naruto feita em Flutter."],s),A.a(["WheateRT","Um aplicativo feito pra visualizar o clima em tempo real."],s),A.a(["LoadingZ","Recria\xe7\xe3o de minigames de Dragon Ball usando FlutterFlame."],s)],A.aw(255,10,10,10),new A.NV(new A.aT(new A.aa($.a8,t.dX),t.Fe)),B.k)}}
+return new A.HD(A.mp("https://www.linkedin.com/in/ruan-emanuell-649b97247/",0,null),A.mp("https://github.com/RuanEmanuell",0,null),A.mp("https://twitter.com/EmanuellRuan",0,null),[A.a(["MobileDex","Uma Pok\xe9dex feita em Flutter usando a Pok\xe9mon Go API."],s),A.a(["LotoFacil","Um checador de resultados da Lotof\xe1cil."],s),A.a(["NarutoDatabase","Uma mini database de Naruto feita em Flutter."],s),A.a(["WheateRT","Um app feito pra visualizar o clima em tempo real."],s),A.a(["LoadingZ","Minigames de Dragon Ball usando FlutterFlame."],s)],A.aw(255,10,10,10),new A.NV(new A.aT(new A.aa($.a8,t.dX),t.Fe)),B.k)}}
 A.HD.prototype={
 aD(){var s,r=this
 r.b5()
@@ -57475,7 +57475,7 @@ o=t.F
 p=A.E3(A.a([h,r,A.cu(k,A.a8y(A.a8H(B.zo,30),new A.a3i(j),p),B.m,k,k,k,k,k,k,k,k,k,k)],o),B.bq,B.Da,B.bB)
 r=j.r
 h=A.cu(k,A.ko(r[q][0],A.f5(k,k,k,k,k,k,k,k,k,k,k,30,k,k,k,k,k,!0,k,k,k,k,k,k,k,k),k,k),B.m,k,k,k,k,k,new A.aD(0,20,0,10),k,k,k,k)
-s=A.ko(r[q][1],A.f5(k,k,k,k,k,k,k,k,k,k,k,12+s/300,k,k,k,k,k,!0,k,k,k,k,k,k,k,k),k,k)
+s=A.ko(r[q][1],A.f5(k,k,k,k,k,k,k,k,k,k,k,11+s/220,k,k,k,k,k,!0,k,k,k,k,k,k,k,k),k,k)
 i=A.QJ(k,k,i,k,k,k,k,k,k,k,k,k,k,k,new A.cG(A.n5(20),B.q),k,k,k,k)
 r=A.cu(k,A.ko("Veja mais no Github",A.f5(k,k,k,k,k,k,k,k,k,k,k,20,k,k,k,k,k,!0,k,k,k,k,k,k,k,k),k,k),B.m,k,k,k,k,k,new A.aD(0,0,10,0),k,k,k,k)
 n=A.n5(30)
