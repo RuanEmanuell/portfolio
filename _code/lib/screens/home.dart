@@ -88,7 +88,7 @@ class _HomeScreen extends State<HomeScreen> {
      return GoogleFonts.robotoMono(
               textStyle: TextStyle(
                 color: black, 
-                fontSize: 12 + screenWidth / 200)
+                fontSize: 9 + screenWidth / 130)
              );
     }
 
@@ -188,7 +188,7 @@ class _HomeScreen extends State<HomeScreen> {
                     width: screenWidth,
                     child: Column(children: [
                       Container(
-                          margin: const EdgeInsets.only(top: 50, bottom: 20),
+                          margin: const EdgeInsets.only(top: 40, bottom: 20),
                           child: Text("Alguns projetos meus:",
                               style: bigTextStyleBlack())
                       ),
@@ -250,9 +250,9 @@ class _HomeScreen extends State<HomeScreen> {
                                           style: bigTextStyleBlack())
                                   ),
                                   Container(
-                                    padding:const EdgeInsets.only(
-                                      left:40,
-                                      right:40,
+                                    margin:const EdgeInsets.only(
+                                      left:20,
+                                      right:20,
                                       bottom:20
                                     ),
                                     child: Text(projeto[e][1],
@@ -261,7 +261,7 @@ class _HomeScreen extends State<HomeScreen> {
                                   ),
                                   Container(
                                     width: 250,
-                                    height: 100,
+                                    height: 80,
                                     child: ElevatedButton(
                                         style: ElevatedButton.styleFrom(
                                             backgroundColor: black,

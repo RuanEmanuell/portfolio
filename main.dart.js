@@ -57425,7 +57425,7 @@ n=A.n7(n,m)
 m=A.oT("Desenvolvedor Mobile Jr",new A.a3n(g,c).$0(),f,f)
 e=A.ck(f,A.oT("Algumas tecnologias que eu conhe\xe7o:",e.$0(),f,f),B.m,f,f,f,f,f,B.z2,f,f,f,f)
 k=A.n5(30)
-k=A.ck(f,A.ck(f,A.E4(A.a([A.AS(A.is("assets/images/flutter.png",f)),A.AS(A.is("assets/images/dart.png",f)),A.AS(A.is("assets/images/firebase.png",f)),A.AS(A.is("assets/images/js.png",f)),A.AS(A.is("assets/images/git.png",f))],r),B.bt,B.cn,B.bE),B.m,f,f,f,f,f,B.z6,f,f,f,f),B.m,f,f,new A.fj(B.b7,f,f,k,f,f,B.b3),f,d/6.5,B.z7,f,f,f,c/1.5)
+k=A.ck(f,A.ck(f,A.E4(A.a([A.AS(A.is("assets/images/flutter.png",f)),A.AS(A.is("assets/images/dart.png",f)),A.AS(A.is("assets/images/firebase.png",f)),A.AS(A.is("assets/images/js.png",f)),A.AS(A.is("assets/images/git.png",f))],r),B.bt,B.cn,B.bE),B.m,f,f,f,f,f,B.z7,f,f,f,f),B.m,f,f,new A.fj(B.b7,f,f,k,f,f,B.b3),f,d/6.5,B.z8,f,f,f,c/1.5)
 j=A.ck(f,A.oT("Alguns projetos meus:",s.$0(),f,f),B.m,f,f,f,f,f,B.z5,f,f,f,f)
 i=!g.w||!1
 h=t.jI
@@ -57469,7 +57469,7 @@ return A.Bn(A.iR(s,s,B.b7,s,s,s,s,s,s,s,s,27+this.b/125,s,s,s,s,s,!0,s,s,s,s,s,s
 $S:30}
 A.a3t.prototype={
 $0(){var s=null
-return A.Bn(A.iR(s,s,B.aN,s,s,s,s,s,s,s,s,12+this.b/200,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))},
+return A.Bn(A.iR(s,s,B.aN,s,s,s,s,s,s,s,s,9+this.b/130,s,s,s,s,s,!0,s,s,s,s,s,s,s,s))},
 $S:30}
 A.a3m.prototype={
 $0(){var s=null
@@ -57497,12 +57497,12 @@ $1(a){var s,r,q,p,o,n=this,m=null,l=n.a,k=A.ck(m,A.a8D(B.zH,new A.a3h(l),A.QJ(m,
 j=A.E4(A.a([k,A.ck(m,m,B.m,m,m,new A.fj(m,new A.zY(new A.n1("assets/images/projeto"+i+".png",m,m)),A.abf(B.aN,5),m,m,m,B.b3),m,n.c/1.9,B.za,m,m,m,j),A.ck(m,A.a8D(B.zK,new A.a3i(l),A.QJ(m,m,B.aN,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m)),B.m,m,m,m,m,m,m,m,m,m,m)],h),B.bt,B.Dr,B.bE)
 k=l.r
 s=A.ck(m,A.oT(k[i][0],n.e.$0(),m,m),B.m,m,m,m,m,m,B.z3,m,m,m,m)
-k=A.ck(m,A.oT(k[i][1],n.f.$0(),m,m),B.m,m,m,m,m,m,m,B.z8,m,m,m)
+k=A.ck(m,A.oT(k[i][1],n.f.$0(),m,m),B.m,m,m,m,m,m,B.z6,m,m,m,m)
 r=A.QJ(m,m,B.aN,m,m,m,m,m,m,m,m,m,m,m,new A.cG(A.n5(20),B.q),m,m,m,m)
 q=A.ck(m,B.K8,B.m,m,m,m,m,m,B.z0,m,m,m,m)
 p=A.n5(30)
 o=A.abf(B.b7,2)
-return A.OF(A.a([j,s,k,A.ck(m,A.a8D(A.E4(A.a([q,A.ck(m,A.is("assets/images/github.png",25),B.m,m,m,new A.fj(m,m,o,p,m,m,B.b3),m,m,m,m,m,m,m)],h),B.bt,B.cn,B.bE),new A.a3j(l,i),r),B.m,m,m,m,m,100,m,m,m,m,250)],h))},
+return A.OF(A.a([j,s,k,A.ck(m,A.a8D(A.E4(A.a([q,A.ck(m,A.is("assets/images/github.png",25),B.m,m,m,new A.fj(m,m,o,p,m,m,B.b3),m,m,m,m,m,m,m)],h),B.bt,B.cn,B.bE),new A.a3j(l,i),r),B.m,m,m,m,m,80,m,m,m,m,250)],h))},
 $S:369}
 A.a3h.prototype={
 $0(){var s=this.a
@@ -60605,12 +60605,12 @@ B.z1=new A.aD(0,0,190,0)
 B.z2=new A.aD(0,10,0,0)
 B.z3=new A.aD(0,20,0,10)
 B.z4=new A.aD(0,30,0,0)
-B.z5=new A.aD(0,50,0,20)
+B.z5=new A.aD(0,40,0,20)
 B.lp=new A.aD(10,10,10,10)
 B.lq=new A.aD(16,0,16,0)
-B.z6=new A.aD(20,20,20,20)
-B.z7=new A.aD(30,30,30,30)
-B.z8=new A.aD(40,0,40,20)
+B.z6=new A.aD(20,0,20,20)
+B.z7=new A.aD(20,20,20,20)
+B.z8=new A.aD(30,30,30,30)
 B.z9=new A.aD(4,0,4,0)
 B.za=new A.aD(5,0,5,0)
 B.zb=new A.aD(8,0,8,0)

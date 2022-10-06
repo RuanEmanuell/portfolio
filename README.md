@@ -3,6 +3,7 @@
 ### Portfólio
 
 This is my portfolio, it was made in Flutter, and it's responsive and works in dark theme, you can find the source code in the "_code" folder.
+You can visit the site by <a href="https://ruanemanuell.github.io/portfolio/">here</a>.
 
 ### How to Run
 

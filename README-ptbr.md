@@ -2,7 +2,9 @@
 
 ### Portfólio
 
-Este é meu portfólio, foi feito com Flutter, responsivo e se adaptando ao modo escuro. O código-fonte está na pasta "_code"
+Este é meu portfólio, foi feito com Flutter, responsivo e se adaptando ao modo escuro. O código-fonte está na pasta "_code".
+Você pode entrar no site por <a href="https://ruanemanuell.github.io/portfolio/">aqui</a>
+
 
 
 ### Como rodar
