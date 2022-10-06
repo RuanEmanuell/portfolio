@@ -57399,7 +57399,7 @@ A.rA(A.br(0,0,8),new A.a3u(r),s)},
 P(a0){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e=this,d=null,c=t.w,b=a0.a5(c).f.a.b,a=a0.a5(c).f.a.a
 c=A.aw(255,241,241,241)
 s=t.F
-c=A.cu(d,A.E3(A.a([A.a8I(A.it("assets/images/linkedin.png",d),new A.a3l(e)),A.a8I(A.it("assets/images/github.png",d),new A.a3m(e)),A.a8I(A.it("assets/images/twitter.png",d),new A.a3n(e))],s),B.bq,B.ck,B.bB),B.m,c,d,d,d,50,d,d,d,d,a)
+c=A.cu(d,A.E3(A.a([A.a8I(A.it("assets/images/linkedin.png",d),new A.a3l(e)),A.a8I(A.it("assets/images/github.png",d),new A.a3m(e)),A.a8I(A.it("assets/images/twitterl.png",d),new A.a3n(e))],s),B.bq,B.ck,B.bB),B.m,c,d,d,d,50,d,d,d,d,a)
 r=a/150
 q=A.ko("Ol\xe1, eu sou",A.Bm(A.f6(d,d,A.aw(255,241,241,241),d,d,d,d,d,d,d,d,17+r,d,d,d,d,d,!0,d,d,d,d,d,d,d,d)),d,d)
 p=A.ko("Ruan Emanuell!",A.Bm(A.f6(d,d,A.aw(255,241,241,241),d,d,d,d,d,d,d,d,35+r,d,d,d,d,d,!0,d,d,d,d,d,d,d,d)),d,d)
@@ -57415,7 +57415,7 @@ j=A.aw(255,241,241,241)
 i=A.n5(30)
 i=A.cu(d,A.cu(d,A.E3(A.a([A.AR(A.it("assets/images/flutter.png",d)),A.AR(A.it("assets/images/dart.png",d)),A.AR(A.it("assets/images/firebase.png",d)),A.AR(A.it("assets/images/js.png",d)),A.AR(A.it("assets/images/git.png",d))],s),B.bq,B.ck,B.bB),B.m,d,d,d,d,d,new A.aD(20,20,20,20),d,d,d,d),B.m,d,d,new A.eJ(j,d,d,i,d,d,B.aL),d,b/6.5,new A.aD(30,30,30,30),d,d,d,a/1.5)
 j=A.aw(255,241,241,241)
-r=A.cu(d,A.ko("Alguns projetos meus:",A.Bm(A.f6(d,d,d,d,d,d,d,d,d,d,d,21+r,d,d,d,d,d,!0,d,d,d,d,d,d,d,d)),d,d),B.m,d,d,d,d,d,new A.aD(0,40,0,30),d,d,d,d)
+r=A.cu(d,A.ko("Alguns projetos meus:",A.Bm(A.f6(d,d,d,d,d,d,d,d,d,d,d,21+r,d,d,d,d,d,!0,d,d,d,d,d,d,d,d)),d,d),B.m,d,d,d,d,d,new A.aD(0,65,0,20),d,d,d,d)
 h=!e.w||!1
 g=t.jI
 g=A.ap(new A.aC(A.a([0,1,2,3,4],t.t),new A.a3o(e,a,b),g),!0,g.i("bg.E"))
@@ -57466,7 +57466,7 @@ A.a3k.prototype={
 $1(a){var s,r,q,p,o,n,m,l=this,k=null,j=l.a,i=j.z,h=A.QJ(k,k,i,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k)
 h=A.cu(k,A.a8y(A.a8H(B.zn,30),new A.a3h(j),h),B.m,k,k,k,k,k,k,k,k,k,k)
 s=l.b
-r=s>480?280:200
+r=s>420?280:200
 q=l.d
 r=A.cu(k,k,B.m,k,k,new A.eJ(k,new A.zX(new A.n1("assets/images/projeto"+q+".png",k,k)),A.abb(i,5),k,k,k,B.aL),k,l.c/1.9,new A.aD(5,0,5,0),k,k,k,r)
 p=A.QJ(k,k,i,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k)

@@ -88,7 +88,7 @@ class _HomeScreen extends State<HomeScreen>{
               } 
           ),
           IconButton(
-              icon:Image.asset("assets/images/twitter.png"),
+              icon:Image.asset("assets/images/twitterl.png"),
               onPressed:(){
                 launchUrl(twitterUrl);
               }
@@ -164,7 +164,7 @@ class _HomeScreen extends State<HomeScreen>{
                       child:Column(
                         children:[
                           Container(
-                            margin:EdgeInsets.only(top: 40, bottom:30),
+                            margin:EdgeInsets.only(top: 65, bottom:20),
                             child:Text("Alguns projetos meus:", style:GoogleFonts.robotoMono(
                               textStyle:TextStyle(
                                 fontSize:21+screenWidth/150)
@@ -204,7 +204,7 @@ class _HomeScreen extends State<HomeScreen>{
                                     ),
                                       Container(
                                         margin:EdgeInsets.only(right: 5, left:5),
-                                        width:screenWidth>480? 280:200,
+                                        width:screenWidth>420? 280:200,
                                         height:screenHeight/1.9,
                                         decoration:BoxDecoration(
                                           border:Border.all(
