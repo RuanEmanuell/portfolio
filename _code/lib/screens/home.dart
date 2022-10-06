@@ -117,7 +117,7 @@ class _HomeScreen extends State<HomeScreen>{
                         duration:Duration(seconds: 2),
                         curve:Curves.easeInOut,
                         child: Image.asset("assets/images/ruan.png")),
-                       Text("Desenvolvedor Mobile JR", style:GoogleFonts.robotoMono(
+                       Text("Desenvolvedor Mobile Jr", style:GoogleFonts.robotoMono(
                        textStyle:TextStyle(
                         color:Color.fromARGB(255, 0, 189, 63),
                         fontSize:22+screenWidth/150
