@@ -72,7 +72,7 @@ class _HomeScreen extends State<HomeScreen> {
      return GoogleFonts.robotoMono(
               textStyle: TextStyle(
                 color: white, 
-                fontSize: 17 + screenWidth / 150)
+                fontSize: 14 + screenWidth / 150)
              );
     }
 
@@ -80,7 +80,7 @@ class _HomeScreen extends State<HomeScreen> {
      return GoogleFonts.robotoMono(
               textStyle: TextStyle(
                 color: white, 
-                fontSize: 23 + screenWidth / 125)
+                fontSize: 27 + screenWidth / 125)
              );
     }
 
@@ -88,7 +88,7 @@ class _HomeScreen extends State<HomeScreen> {
      return GoogleFonts.robotoMono(
               textStyle: TextStyle(
                 color: black, 
-                fontSize: 9 + screenWidth / 125)
+                fontSize: 9 + screenWidth / 200)
              );
     }
 
