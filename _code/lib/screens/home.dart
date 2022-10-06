@@ -32,6 +32,7 @@ class _HomeScreen extends State<HomeScreen> {
   //Atalho pras cores principais
   var black = const Color.fromARGB(255, 10, 10, 10);
   var white = const Color.fromARGB(255, 241, 241, 241);
+  var green = Color.fromARGB(255, 0, 143, 36);
 
   //Controlador do Carousel
   CarouselController buttonCarouselController = CarouselController();
@@ -65,6 +66,47 @@ class _HomeScreen extends State<HomeScreen> {
     //Pegando a altura e largura da tela
     var screenHeight = MediaQuery.of(context).size.height;
     var screenWidth = MediaQuery.of(context).size.width;
+
+    //Estilos de exto
+    TextStyle smallTextStyle(){
+     return GoogleFonts.robotoMono(
+              textStyle: TextStyle(
+                color: white, 
+                fontSize: 17 + screenWidth / 150)
+             );
+    }
+
+    TextStyle bigTextStyle(){
+     return GoogleFonts.robotoMono(
+              textStyle: TextStyle(
+                color: white, 
+                fontSize: 23 + screenWidth / 125)
+             );
+    }
+
+    TextStyle smallerTextStyleBlack(){
+     return GoogleFonts.robotoMono(
+              textStyle: TextStyle(
+                color: black, 
+                fontSize: 9 + screenWidth / 125)
+             );
+    }
+
+     TextStyle bigTextStyleBlack(){
+     return GoogleFonts.robotoMono(
+              textStyle: TextStyle(
+                color: black, 
+                fontSize: 21 + screenWidth / 125)
+             );
+    }
+
+    TextStyle biggerTextStyleGreen(){
+     return GoogleFonts.robotoMono(
+              textStyle: TextStyle(
+                color: green, 
+                fontSize: 21 + screenWidth / 125)
+             );
+    }
 
     return Scaffold(
        body: Container(
@@ -103,16 +145,10 @@ class _HomeScreen extends State<HomeScreen> {
               margin: const EdgeInsets.only(top: 30),
               child: Column(children: [
                 Text("Olá, eu sou",
-                    style: GoogleFonts.robotoMono(
-                        textStyle: TextStyle(
-                          color: white, 
-                          fontSize: 17 + screenWidth / 150))
+                    style: smallTextStyle()
                 ),
                 Text("Ruan Emanuell!",
-                    style: GoogleFonts.robotoMono(
-                        textStyle: TextStyle(
-                          color: white, 
-                          fontSize: 35 + screenWidth / 150))
+                    style: bigTextStyle()
                 ),
                 AnimatedContainer(
                     width: small ? screenWidth / 1.75 : screenWidth / 1.25,
@@ -122,18 +158,12 @@ class _HomeScreen extends State<HomeScreen> {
                     child: Image.asset("assets/images/ruan.png")
                 ),
                 Text("Desenvolvedor Mobile Jr",
-                    style: GoogleFonts.robotoMono(
-                        textStyle: TextStyle(
-                            color: const Color.fromARGB(255, 0, 189, 63),
-                            fontSize: 21 + screenWidth / 125))
+                    style: biggerTextStyleGreen()
                 ),
                 Container(
                   margin: const EdgeInsets.only(top: 10),
                   child: Text("Algumas tecnologias que eu conheço:",
-                      style: GoogleFonts.robotoMono(
-                          textStyle: TextStyle(
-                            color: white, 
-                            fontSize: 12 + screenWidth / 100))),
+                      style: smallTextStyle()),
                 ),
                 //Container que mostra as tecnologias
                 Container(
@@ -160,8 +190,7 @@ class _HomeScreen extends State<HomeScreen> {
                       Container(
                           margin: const EdgeInsets.only(top: 50, bottom: 20),
                           child: Text("Alguns projetos meus:",
-                              style: GoogleFonts.robotoMono(
-                                  textStyle: TextStyle(fontSize: 21 + screenWidth / 150)))
+                              style: bigTextStyleBlack())
                       ),
                       //Carousel de imagens
                       CarouselSlider(
@@ -218,10 +247,10 @@ class _HomeScreen extends State<HomeScreen> {
                                   Container(
                                       margin: const EdgeInsets.only(top: 20, bottom: 10),
                                       child: Text(projeto[e][0],
-                                          style: const TextStyle(fontSize: 30))
+                                          style: bigTextStyleBlack())
                                   ),
                                   Text(projeto[e][1],
-                                      style: TextStyle(fontSize: 11 + screenWidth / 220)
+                                      style: smallerTextStyleBlack()
                                   ),
                                   Container(
                                     width: 250,
