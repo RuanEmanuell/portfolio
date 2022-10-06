@@ -10,7 +10,7 @@ You will need <a href="https://docs.flutter.dev/get-started/install">Flutter</a>
 
 Here are some screenshots of the project running:
 
-![Screenshot_312](https:/![Screenshot_313](https://user-images.githubusercontent.com/113607857/194424863-9d46a8a6-2787-4b2c-be20-c49db8f31bf7.png)
+![Screenshot_312](https://user-images.githubusercontent.com/113607857/194424909-572f457d-f72e-4f6d-8a6a-d5041968e266.png)
 ![Screenshot_313](https://user-images.githubusercontent.com/113607857/194424889-313cade0-524d-41cb-8d50-bf84deb678d4.png)
 
 
