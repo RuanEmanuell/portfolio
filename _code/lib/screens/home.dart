@@ -16,17 +16,19 @@ class _HomeScreen extends State<HomeScreen>{
   var githubUrl=Uri.parse("https://github.com/RuanEmanuell");
   var twitterUrl=Uri.parse("https://twitter.com/EmanuellRuan");
 
-  var projeto={
+  List projeto=[
     ["MobileDex", "Uma Pokédex feita em Flutter usando a Pokémon Go API."],
     ["LotoFacil", "Um checador de resultados da Lotofácil."], 
     ["NarutoDatabase", "Uma mini database de Naruto feita em Flutter."],
     ["WheateRT", "Um aplicativo feito pra visualizar o clima em tempo real."],
     ["LoadingZ", "Recriação de minigames de Dragon Ball usando FlutterFlame."],
-  }.toList();
+  ];
 
   bool clicked=false;
   bool small=false;
   bool timeup=true;
+
+  var black=Color.fromARGB(255, 10, 10, 10);
 
 
   CarouselController buttonCarouselController = CarouselController();
@@ -63,7 +65,7 @@ class _HomeScreen extends State<HomeScreen>{
         height:screenHeight,
         width:screenWidth,
         decoration:BoxDecoration(
-          color:Color.fromARGB(255, 10, 10, 10)
+          color:black
         ),
         child:ListView(
           children: [
@@ -86,7 +88,7 @@ class _HomeScreen extends State<HomeScreen>{
               } 
           ),
           IconButton(
-              icon:Image.asset("assets/images/twitter.jpg"),
+              icon:Image.asset("assets/images/twitter.png"),
               onPressed:(){
                 launchUrl(twitterUrl);
               }
@@ -122,7 +124,7 @@ class _HomeScreen extends State<HomeScreen>{
                      Text("Desenvolvedor Mobile", style:GoogleFonts.robotoMono(
                      textStyle:TextStyle(
                       color:Color.fromARGB(255, 0, 189, 63),
-                      fontSize:25+screenWidth/150
+                      fontSize:24+screenWidth/150
                     ))
                     ),
                     Container(
@@ -186,7 +188,7 @@ class _HomeScreen extends State<HomeScreen>{
                                     Container(
                                       child: ElevatedButton(
                                       style:ElevatedButton.styleFrom(
-                                        backgroundColor:Color.fromARGB(255, 10, 10, 10)
+                                        backgroundColor:black
                                       ),
                                       onPressed:(){
                                         buttonCarouselController.previousPage(
@@ -207,15 +209,17 @@ class _HomeScreen extends State<HomeScreen>{
                                         decoration:BoxDecoration(
                                           border:Border.all(
                                             width:5,
-                                            color:Color.fromARGB(255, 10, 10, 10)
-                                          )
-                                        ),
-                                        child:Image.asset("assets/images/projeto${e}.png")
+                                            color:black
+                                          ),
+                                          image:DecorationImage(
+                                            image: AssetImage("assets/images/projeto${e}.png")
+                                            )
+                                        )
                                       ),
                                     Container(
                                       child: ElevatedButton(
                                       style:ElevatedButton.styleFrom(
-                                        backgroundColor:Color.fromARGB(255, 10, 10, 10)
+                                        backgroundColor:black
                                       ),                                    
                                       onPressed:(){
                                         buttonCarouselController.nextPage(
@@ -237,7 +241,7 @@ class _HomeScreen extends State<HomeScreen>{
                                       fontSize:30
                                     ))),
                                   Text(projeto[e][1], style:TextStyle(
-                                    fontSize:9+screenWidth/150
+                                    fontSize:13+screenWidth/250
                                   )),
                                   Container(
                                     width:250,
@@ -245,7 +249,7 @@ class _HomeScreen extends State<HomeScreen>{
                                     margin:EdgeInsets.only(top: 30),
                                     child: ElevatedButton(
                                       style:ElevatedButton.styleFrom(
-                                        backgroundColor:Color.fromARGB(255, 10, 10, 10),
+                                        backgroundColor:black,
                                         shape:RoundedRectangleBorder(
                                           borderRadius:BorderRadius.circular(20)
                                         )
@@ -262,7 +266,7 @@ class _HomeScreen extends State<HomeScreen>{
                                            ))),
                                           Container(
                                             decoration:BoxDecoration(
-                                              borderRadius:BorderRadius.circular(20),
+                                              borderRadius:BorderRadius.circular(30),
                                               border:Border.all(
                                                 color:Color.fromARGB(255, 241, 241, 241),
                                                 width:2
