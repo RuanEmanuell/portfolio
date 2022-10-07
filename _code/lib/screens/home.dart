@@ -25,6 +25,7 @@ class _HomeScreen extends State<HomeScreen> {
   ];
 
   //Variáveis de animações
+  bool loaded=false;
   bool clicked = false;
   bool small = false;
   bool timeup = true;
@@ -32,7 +33,7 @@ class _HomeScreen extends State<HomeScreen> {
   //Atalho pras cores principais
   var black = const Color.fromARGB(255, 10, 10, 10);
   var white = const Color.fromARGB(255, 241, 241, 241);
-  var green = Color.fromARGB(255, 0, 143, 36);
+  var green = const Color.fromARGB(255, 0, 143, 36);
 
   //Controlador do Carousel
   CarouselController buttonCarouselController = CarouselController();
@@ -40,20 +41,26 @@ class _HomeScreen extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
-    //Diminuir a foto em 1 segundo
-    Future.delayed(const Duration(seconds: 1), () {
+    //Tela de loading, acaba em 3 segundos
+    Future.delayed(const Duration(seconds: 3), (){
+      setState(() {
+        loaded=true;
+      });
+    });
+    //Diminuir a foto 1 segundo depois
+    Future.delayed(const Duration(seconds: 4), () {
       setState(() {
         small = true;
       });
     });
-    //Mostrar o texto de dica aos 3 segundos
-    Future.delayed(const Duration(seconds: 3), () {
+    //Mostrar o texto de dica depois de 2 segundos
+    Future.delayed(const Duration(seconds: 6), () {
       setState(() {
         timeup = false;
       });
     });
-    //Remover ele aos 8 segundos
-    Future.delayed(const Duration(seconds: 8), () {
+    //Remover ele 4 segundos depois
+    Future.delayed(const Duration(seconds: 10), () {
       setState(() {
         timeup = true;
       });
@@ -109,7 +116,7 @@ class _HomeScreen extends State<HomeScreen> {
     }
 
     return Scaffold(
-       body: Container(
+       body: loaded ? Container(
        color: black,
        child: ListView(children: [
         //Header da página
@@ -138,7 +145,8 @@ class _HomeScreen extends State<HomeScreen> {
           ),
         ),
         //Primeira sessão
-        Stack(children: [
+        Stack(
+          children: [
           Center(
             child: Container(
               color: black,
@@ -207,19 +215,17 @@ class _HomeScreen extends State<HomeScreen> {
                                     crossAxisAlignment: CrossAxisAlignment.center,
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
-                                      Container(
-                                        child: ElevatedButton(
-                                            style: ElevatedButton.styleFrom(backgroundColor: black),
-                                            onPressed: () {
-                                              buttonCarouselController.previousPage(
-                                                  curve: Curves.easeInOutSine,
-                                                  duration: const Duration(seconds: 1));
-                                              setState(() {
-                                                clicked = true;
-                                              });
-                                            },
-                                            child: const Icon(Icons.arrow_back, size: 30)),
-                                      ),
+                                      ElevatedButton(
+                                          style: ElevatedButton.styleFrom(backgroundColor: black),
+                                          onPressed: () {
+                                            buttonCarouselController.previousPage(
+                                                curve: Curves.easeInOutSine,
+                                                duration: const Duration(seconds: 1));
+                                            setState(() {
+                                              clicked = true;
+                                            });
+                                          },
+                                          child: const Icon(Icons.arrow_back, size: 30)),
                                       Container(
                                           margin: const EdgeInsets.only(right: 5, left: 5),
                                           width: screenWidth > 420 ? 280 : 200,
@@ -229,19 +235,17 @@ class _HomeScreen extends State<HomeScreen> {
                                               image: DecorationImage(
                                                   image:
                                                       AssetImage("assets/images/projeto$e.png")))),
-                                      Container(
-                                        child: ElevatedButton(
-                                            style: ElevatedButton.styleFrom(backgroundColor: black),
-                                            onPressed: () {
-                                              buttonCarouselController.nextPage(
-                                                  curve: Curves.easeInOutSine,
-                                                  duration: const Duration(seconds: 1));
-                                              setState(() {
-                                                clicked = true;
-                                              });
-                                            },
-                                            child: const Icon(Icons.arrow_forward, size: 30)),
-                                      )
+                                      ElevatedButton(
+                                          style: ElevatedButton.styleFrom(backgroundColor: black),
+                                          onPressed: () {
+                                            buttonCarouselController.nextPage(
+                                                curve: Curves.easeInOutSine,
+                                                duration: const Duration(seconds: 1));
+                                            setState(() {
+                                              clicked = true;
+                                            });
+                                          },
+                                          child: const Icon(Icons.arrow_forward, size: 30))
                                     ],
                                   ),
                                   Container(
@@ -259,7 +263,7 @@ class _HomeScreen extends State<HomeScreen> {
                                         style: smallerTextStyleBlack()
                                     ),
                                   ),
-                                  Container(
+                                  SizedBox(
                                     width: 250,
                                     height: 80,
                                     child: ElevatedButton(
@@ -314,6 +318,18 @@ class _HomeScreen extends State<HomeScreen> {
           )
         ])
       ]),
-    ));
+    ):Container(
+      color:black,
+      child: Center(
+        child:SizedBox(
+          height:screenHeight/6,
+          width:screenWidth/7,
+          child: CircularProgressIndicator(
+            color:white,
+          )
+        ),
+       ),
+    ),
+   );
   }
 }
