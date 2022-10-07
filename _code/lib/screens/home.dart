@@ -41,26 +41,26 @@ class _HomeScreen extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
-    //Tela de loading, acaba em 3 segundos
-    Future.delayed(const Duration(seconds: 3), (){
+    //Tela de loading, acaba em 2 segundos
+    Future.delayed(const Duration(seconds: 2), (){
       setState(() {
         loaded=true;
       });
     });
     //Diminuir a foto 1 segundo depois
-    Future.delayed(const Duration(seconds: 4), () {
+    Future.delayed(const Duration(seconds: 3), () {
       setState(() {
         small = true;
       });
     });
     //Mostrar o texto de dica depois de 2 segundos
-    Future.delayed(const Duration(seconds: 6), () {
+    Future.delayed(const Duration(seconds: 5), () {
       setState(() {
         timeup = false;
       });
     });
     //Remover ele 4 segundos depois
-    Future.delayed(const Duration(seconds: 10), () {
+    Future.delayed(const Duration(seconds: 9), () {
       setState(() {
         timeup = true;
       });
@@ -322,8 +322,8 @@ class _HomeScreen extends State<HomeScreen> {
       color:black,
       child: Center(
         child:SizedBox(
-          height:screenHeight/6,
-          width:screenWidth/7,
+          height:100,
+          width:100,
           child: CircularProgressIndicator(
             color:white,
           )
