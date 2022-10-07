@@ -9,7 +9,7 @@ Você pode entrar no site por <a href="https://ruanemanuell.github.io/portfolio/
 
 ### Como rodar
 
-Você precisará de <a href="https://docs.flutter.dev/get-started/install">Flutter</a>, após inicializar em seu emulador ou dispositivo e <a href="https://docs .flutter.dev/get-started/codelab">iniciar um novo projeto do Flutter</a>, você transferirá os arquivos deste repositório para a pasta do seu projeto Flutter.
+Você precisará de <a href="https://docs.flutter.dev/get-started/install">Flutter</a>, após inicializar em seu emulador ou dispositivo e <a href="https://docs .flutter.dev/get-started/codelab">iniciar um novo projeto do Flutter</a>, você transferirá os arquivos da pasta <a href="_code/">"_code"<a> para a pasta do seu projeto do Flutter.
 
 
 ### Aqui estão algumas prints do projeto rodando:
