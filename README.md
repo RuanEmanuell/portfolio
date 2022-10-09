@@ -2,12 +2,12 @@
 
 ### Portfólio
 
-This is my portfolio, it was made in Flutter, and it's responsive and works in dark theme, you can find the source code in the "_code" folder.
+This is my portfolio, it was made in Flutter, and it's responsive and works in dark theme.
 You can visit the site by <a href="https://ruanemanuell.github.io/portfolio/">here</a>.
 
 ### How to Run
 
-You will need <a href="https://docs.flutter.dev/get-started/install">Flutter</a>, after booting up on your emulator or device and <a href="https://docs.flutter.dev/get-started/codelab">starting a new Flutter project</a>, you will transfer the files of this repository to the folder of your Flutter project.
+You will need <a href="https://docs.flutter.dev/get-started/install">Flutter</a>, after booting up on your emulator or device and <a href="https://docs.flutter.dev/get-started/codelab">starting a new Flutter project</a>, you will transfer the files of the <a href="_code/">"_code"<a> folder of your Flutter project.
 
 ### Here are some screenshots of the project running:
 
