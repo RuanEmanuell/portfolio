@@ -16,7 +16,7 @@ class _HomeScreen extends State<HomeScreen> {
   var githubUrl = Uri.parse("https://github.com/RuanEmanuell");
   var twitterUrl = Uri.parse("https://twitter.com/EmanuellRuan");
 
-  //Array com as informações
+  //Array com as informações dos projetos
   List projeto = [
     ["RTChat", "Um chat em tempo real feito com Flutter e Firebase."],
     ["LoadingZ", "Minigames de Dragon Ball usando FlutterFlame."],
