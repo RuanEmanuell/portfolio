@@ -57664,7 +57664,7 @@ $1(a){return new A.ls(null)},
 $S:367}
 A.ls.prototype={
 ae(){var s=t.s
-return new A.HM(A.mp("https://www.linkedin.com/in/ruan-emanuell-649b97247/",0,null),A.mp("https://github.com/RuanEmanuell",0,null),A.mp("https://twitter.com/EmanuellRuan",0,null),[A.a(["MobileDex","Uma Pok\xe9dex feita em Flutter usando a Pok\xe9mon Go API."],s),A.a(["LotoFacil","Um checador de resultados da Lotof\xe1cil."],s),A.a(["NarutoDatabase","Uma mini database de Naruto feita em Flutter."],s),A.a(["WheateRT","Um app feito para visualizar o clima em tempo real."],s),A.a(["LoadingZ","Minigames de Dragon Ball usando FlutterFlame."],s)],new A.O3(new A.aT(new A.aa($.a8,t.dX),t.Fe)),B.k)}}
+return new A.HM(A.mp("https://www.linkedin.com/in/ruan-emanuell-649b97247/",0,null),A.mp("https://github.com/RuanEmanuell",0,null),A.mp("https://twitter.com/EmanuellRuan",0,null),[A.a(["RTChat","Um chat em tempo real feito com Flutter e Firebase."],s),A.a(["LoadingZ","Minigames de Dragon Ball usando FlutterFlame."],s),A.a(["LotoFacil","Um checador de resultados da Lotof\xe1cil."],s),A.a(["NarutoDatabase","Uma mini database de Naruto feita em Flutter."],s),A.a(["WheateRT","Um app feito para visualizar o clima no momento."],s)],new A.O3(new A.aT(new A.aa($.a8,t.dX),t.Fe)),B.k)}}
 A.HM.prototype={
 az(){var s,r=this
 r.b3()

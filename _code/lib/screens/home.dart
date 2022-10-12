@@ -18,11 +18,11 @@ class _HomeScreen extends State<HomeScreen> {
 
   //Array com as informações
   List projeto = [
-    ["MobileDex", "Uma Pokédex feita em Flutter usando a Pokémon Go API."],
+    ["RTChat", "Um chat em tempo real feito com Flutter e Firebase."],
+    ["LoadingZ", "Minigames de Dragon Ball usando FlutterFlame."],
     ["LotoFacil", "Um checador de resultados da Lotofácil."],
     ["NarutoDatabase", "Uma mini database de Naruto feita em Flutter."],
-    ["WheateRT", "Um app feito para visualizar o clima em tempo real."],
-    ["LoadingZ", "Minigames de Dragon Ball usando FlutterFlame."],
+    ["WheateRT", "Um app feito para visualizar o clima no momento."]
   ];
 
   //Variáveis de animações
