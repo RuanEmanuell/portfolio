@@ -14,6 +14,6 @@ Você precisará de <a href="https://docs.flutter.dev/get-started/install">Flutt
 
 ### Aqui estão algumas prints do projeto rodando:
 
-![Screenshot_314](https://user-images.githubusercontent.com/113607857/194425398-cb40bbd8-050f-47a5-9629-4bac925fcfad.png)
-![Screenshot_313](https://user-images.githubusercontent.com/113607857/194425406-b0fbaf54-0036-4ee2-8838-02caca22eee3.png)
+![Screenshot_439](https://github.com/RuanEmanuell/portfolio/assets/113607857/d120a915-62f8-4878-b129-a620e662d510)
+![Screenshot_440](https://github.com/RuanEmanuell/portfolio/assets/113607857/7f94c06e-d624-4264-bd3c-f15aa8f81842)
 
