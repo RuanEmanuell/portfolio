@@ -8,6 +8,7 @@ You can visit the site by <a href="https://ruanemanuell.github.io/portfolio/">he
 ### How to Run
 
 You will need <a href="https://docs.flutter.dev/get-started/install">Flutter</a>, after booting up on your emulator or device and <a href="https://docs.flutter.dev/get-started/codelab">starting a new Flutter project</a>, you will transfer the files of the <a href="_code/">"_code"<a> folder of your Flutter project.
+As the project started in 2022, it will be necessary to roll back to an older version of Flutter (v 3.13.9). Some other adjustments may also be necessary due to incompatibility.
 
 ### Here are some screenshots of the project running:
 ![Screenshot_439](https://github.com/RuanEmanuell/portfolio/assets/113607857/d120a915-62f8-4878-b129-a620e662d510)
