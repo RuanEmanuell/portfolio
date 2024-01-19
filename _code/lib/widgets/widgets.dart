@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class FontTextStyle extends StatelessWidget {
-  var text;
-  var color;
-  var fontSize;
+  final String text;
+  final Color color;
+  final double fontSize;
 
-  FontTextStyle({this.color, this.fontSize, this.text});
+  const FontTextStyle({super.key, required this.color, required this.fontSize, required this.text});
 
   @override
   Widget build(BuildContext context) {
@@ -18,12 +18,14 @@ class FontTextStyle extends StatelessWidget {
 
 class LanguageIcons extends StatelessWidget {
   
-  var image;
+  final String image;
+  final String message;
 
-  LanguageIcons({super.key, this.image});
+  const LanguageIcons({super.key, required this.image, required this.message});
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(child: Image.asset(image));
+    return  Expanded(child: Tooltip(
+      message: message, child: Image.asset(image)));
   }
 }
