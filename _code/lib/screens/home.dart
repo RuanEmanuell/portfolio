@@ -35,7 +35,7 @@ class _HomeScreen extends State<HomeScreen> {
     "css",
     "js",
     "react",
-    "java",
+    "node",
     "mongo",
     "sql",
     "firebase",
