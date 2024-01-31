@@ -19,10 +19,10 @@ class _HomeScreen extends State<HomeScreen> {
 
   //Array com as informações dos projetos
   List projeto = [
-    ["WaterReminder", "Um app para te ajudar a lembrar de beber água."],
     ["RTChat", "Um chat em tempo real feito com Flutter e Firebase."],
+    ["WaterReminder", "Um app para te ajudar a lembrar de beber água."],
     ["LotoFacil", "Um checador de resultados da Lotofácil."],
-    ["PokeGuesser", "Um jogo de adivinhar pokémon usando a PokeAPI."],
+    ["PokeArena", "Batalhas de Pokémon com ReactJS e a PokeAPI."],
     ["LoadingZ", "Minigames de Dragon Ball usando FlutterFlame."],
     ["WheateRT", "Um app feito para visualizar o clima no momento."],
     ["NarutoDatabase", "Uma mini database de Naruto usando a NarutoAPI."],
@@ -188,7 +188,8 @@ class _HomeScreen extends State<HomeScreen> {
                                   options: CarouselOptions(
                                       height: screenHeight / 1.2,
                                       autoPlay: clicked ? false : true,
-                                      viewportFraction: 1.1),
+                                      viewportFraction: 1.1,
+                                      autoPlayInterval: const Duration(seconds: 12)),
                                   items: [0, 1, 2, 3, 4, 5, 6, 7].map((e) {
                                     return Builder(
                                       builder: (BuildContext context) {
@@ -288,7 +289,7 @@ class _HomeScreen extends State<HomeScreen> {
                                                                     .circular(
                                                                         20))),
                                                 onPressed: () {
-                                                  launchUrl(Uri.parse(e == 0
+                                                  launchUrl(Uri.parse(e == 1
                                                       ? "https://play.google.com/store/apps/details?id=com.ruanemanuell.water_reminder"
                                                       : "https://github.com/RuanEmanuell/${projeto[e][0]}"));
                                                 },
@@ -298,7 +299,7 @@ class _HomeScreen extends State<HomeScreen> {
                                                         margin: const EdgeInsets
                                                             .only(right: 10),
                                                         child: Text(
-                                                            e == 0
+                                                            e == 1
                                                                 ? "Veja na Google Play"
                                                                 : "Veja mais no Github",
                                                             style:
@@ -306,7 +307,7 @@ class _HomeScreen extends State<HomeScreen> {
                                                                     fontSize:
                                                                         19))),
                                                     Container(
-                                                        decoration: e == 0
+                                                        decoration: e == 1
                                                             ? BoxDecoration()
                                                             : BoxDecoration(
                                                                 borderRadius:
@@ -320,7 +321,7 @@ class _HomeScreen extends State<HomeScreen> {
                                                                         width:
                                                                             2)),
                                                         child: Image.asset(
-                                                            e == 0
+                                                            e == 1
                                                                 ? "assets/images/googleplay.png"
                                                                 : "assets/images/github.png",
                                                             width: 25))
