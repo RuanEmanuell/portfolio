@@ -3,8 +3,8 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "9d6f0c87978c94f278e4aa10cdacccff",
-"assets/AssetManifest.json": "909addf6ad9c401de4502069827a8735",
+const RESOURCES = {"assets/AssetManifest.bin": "39487626f8566ff369440db8edddde68",
+"assets/AssetManifest.json": "4aa9fe797c45c56d6a7fcd7d8aa8040d",
 "assets/assets/images/apresentacao.png": "27333d94cf8b1918b941aff81e37840e",
 "assets/assets/images/css.png": "ff042396f31f2cbde02d9031821dd1da",
 "assets/assets/images/firebase.png": "44b31b544b9ca3c736788200b4fd120d",
@@ -20,7 +20,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "9d6f0c87978c94f278e4aa10cdacccff
 "assets/assets/images/mongo.png": "20d8652c9fd1853ac11a27da7b915ac1",
 "assets/assets/images/narutodatabase.png": "7b7acfcac951b11793bc5f09d22240b3",
 "assets/assets/images/node.png": "bf6bdd7caa83e0cb664d280d3f4a3972",
-"assets/assets/images/pokeguesser.png": "e4e8ef03ff21bbe8cd82c3a0a271bda4",
+"assets/assets/images/pokearena.png": "fddcf8d08791aa09996c2be0b2f34577",
 "assets/assets/images/react.png": "de303a4b45071fde56699d2ccb5eb60e",
 "assets/assets/images/rtchat.png": "885a5c68f5504d14661d7e4461766295",
 "assets/assets/images/ruan.png": "28486c3c65920cc7c1bf9ffa4b4bb691",
@@ -46,9 +46,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "9d6f0c87978c94f278e4aa10cdacccff
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "e8a57a1247e8dc419ab2beccf9f75613",
-"/": "e8a57a1247e8dc419ab2beccf9f75613",
-"main.dart.js": "a5859b48d16f7d784be8c098b077b88d",
+"index.html": "d261850a5c808adf302f80a014216f32",
+"/": "d261850a5c808adf302f80a014216f32",
+"main.dart.js": "ae36bb24b60af136981f59bbf7a9ae28",
 "manifest.json": "e74af8957b5899dc6da961caee768ec9",
 "version.json": "396c903be24e05680276e5d88d453065"};
 // The application shell files that are downloaded before a service worker can
