@@ -63685,7 +63685,7 @@ $1(a){return new A.lu(null)},
 $S:400}
 A.lu.prototype={
 ak(){var s=t.s
-return new A.IF(A.fi("https://www.linkedin.com/in/ruan-emanuell-649b97247/",0,null),A.fi("https://github.com/RuanEmanuell",0,null),A.fi("https://twitter.com/EmanuellRuan",0,null),[A.a(["RTChat","Um chat em tempo real feito com Flutter e Firebase."],s),A.a(["WaterReminder","Um app para te ajudar a lembrar de beber \xe1gua."],s),A.a(["LotoFacil","Um checador de resultados da Lotof\xe1cil."],s),A.a(["PokeArena","Batalhas de Pok\xe9mon com ReactJS e a PokeAPI."],s),A.a(["LoadingZ","Minigames de Dragon Ball usando FlutterFlame."],s),A.a(["WheateRT","Um app feito para visualizar o clima no momento."],s),A.a(["NarutoDatabase","Uma mini database de Naruto usando a NarutoAPI."],s),A.a(["Apresentacao","Um site de breve apresenta\xe7\xe3o sobre a minha experi\xeancia."],s)],["flutter","html","css","js","react","node","mongo","sql","firebase","git"],new A.Ps(new A.bc(new A.ab($.a5,t.wC),t.Fe)),B.j)}}
+return new A.IF(A.fi("https://www.linkedin.com/in/ruan-emanuell-649b97247/",0,null),A.fi("https://github.com/RuanEmanuell",0,null),A.fi("https://twitter.com/EmanuellRuan",0,null),[A.a(["RTChat","Um chat em tempo real feito com Flutter e Firebase."],s),A.a(["WaterReminder","Um app para te ajudar a lembrar de beber \xe1gua."],s),A.a(["CPUCompare","Comparador de CPUs usando webscrapping em NodeJS e React."],s),A.a(["LotoFacil","Um checador de resultados da Lotof\xe1cil."],s),A.a(["ProgEdu","App de aprender a programar, antes dispon\xedvel na Google Play."],s),A.a(["PokeArena","Batalhas de Pok\xe9mon com ReactJS e a PokeAPI."],s),A.a(["LoadingZ","Minigames de Dragon Ball usando FlutterFlame."],s),A.a(["WheateRT","Um app feito para visualizar o clima no momento."],s),A.a(["NarutoDatabase","Uma mini database de Naruto usando a NarutoAPI."],s),A.a(["Apresentacao","Um site de breve apresenta\xe7\xe3o sobre a minha experi\xeancia."],s)],["flutter","html","css","js","react","node","mongo","sql","firebase","git"],new A.Ps(new A.bc(new A.ab($.a5,t.wC),t.Fe)),B.j)}}
 A.IF.prototype={
 aF(){var s,r=this
 r.b2()
@@ -63713,7 +63713,7 @@ k.push(new A.C8("assets/images/"+g+".png",A.auI(g,i),d))}l=A.cq(d,A.cq(d,A.EG(k,
 k=A.cq(d,new A.hv("Alguns projetos meus:",B.ar,o,d),B.o,d,d,d,d,d,B.yc,d,d,d,d)
 j=!e.y||!1
 i=t.Y2
-i=A.aj(new A.ah(A.a([0,1,2,3,4,5,6,7],t.t),new A.a3P(e,a,b),i),!0,i.h("b3.E"))
+i=A.aj(new A.ah(A.a([0,1,2,3,4,5,6,7,8,9],t.t),new A.a3P(e,a,b),i),!0,i.h("b3.E"))
 f=i.length
 r=A.qG(A.cq(d,A.Qb(A.a([new A.hv("Ol\xe1, eu sou",B.aH,14+r,d),new A.hv("Ruan Emanuell!",B.aH,27+q,d),new A.qc(n,d,p,B.f3,B.dl,d,d),new A.hv("Desenvolvedor Fullstack",B.xe,o,d),m,l,A.cq(d,A.Qb(A.a([k,new A.qE(new A.Pt(b/1.2,1.1,j,B.xW),i,e.ay,f,d)],c)),B.o,B.aH,d,d,d,d,d,d,d,d,a)],c)),B.o,B.ar,d,d,d,d,B.yb,d,d,d,d),d,d)
 q=e.Q?0:1
